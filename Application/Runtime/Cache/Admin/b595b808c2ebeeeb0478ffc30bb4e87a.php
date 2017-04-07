@@ -22,7 +22,7 @@
     <h2><span class="icon-user"></span>基本设置</h2>
     <ul style="display:block">
         <li><a href="<?php echo U('Info/info');?>" target="right"><span class="icon-caret-right"></span>网站设置</a></li>
-        <li><a href="pass.html" target="right"><span class="icon-caret-right"></span>修改密码</a></li>
+        <li><a href="<?php echo U('Pass/pass');?>" target="right"><span class="icon-caret-right"></span>修改密码</a></li>
         <li><a href="page.html" target="right"><span class="icon-caret-right"></span>单页管理</a></li>
         <li><a href="adv.html" target="right"><span class="icon-caret-right"></span>首页轮播</a></li>
         <li><a href="book.html" target="right"><span class="icon-caret-right"></span>留言管理</a></li>
@@ -31,7 +31,7 @@
     <h2><span class="icon-pencil-square-o"></span>栏目管理</h2>
     <ul>
         <li><a href="list.html" target="right"><span class="icon-caret-right"></span>内容管理</a></li>
-        <li><a href="add.html" target="right"><span class="icon-caret-right"></span>添加内容</a></li>
+        <li><a href="<?php echo U('add/add');?>" target="right"><span class="icon-caret-right"></span>添加内容</a></li>
         <li><a href="cate.html" target="right"><span class="icon-caret-right"></span>分类管理</a></li>
     </ul>
 
@@ -47,7 +47,7 @@
     <h2><span class="icon-pencil-square-o"></span>新闻管理</h2>
     <ul>
         <li><a href="<?php echo U('news/news');?>" target="right"><span class="icon-caret-right"></span>内容管理</a></li>
-        <li><a href="add.html" target="right"><span class="icon-caret-right"></span>添加内容</a></li>
+        <li><a href="<?php echo U('news/add');?>" target="right"><span class="icon-caret-right"></span>添加内容</a></li>
         <li><a href="cate.html" target="right"><span class="icon-caret-right"></span>分类管理</a></li>
     </ul>
     <!-- 新闻管理footer -->
@@ -72,7 +72,7 @@
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;切换语言：<a href="##">中文</a> &nbsp;&nbsp;<a href="##">英文</a> </li>
 </ul>
 <div class="admin">
-  <iframe scrolling="auto" rameborder="0" src="../Info/info.html" name="right" width="100%" height="100%"></iframe>
+  <iframe scrolling="auto" rameborder="0" src="<?php echo U('info/info');?>" name="right" width="100%" height="100%"></iframe>
 </div>
 <div style="text-align:center;">
 </div>
