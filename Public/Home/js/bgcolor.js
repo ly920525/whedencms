@@ -1,0 +1,1 @@
+$("footer").addClass("bg-tuna");

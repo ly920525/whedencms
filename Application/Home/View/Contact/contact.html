@@ -1,0 +1,90 @@
+<include file="Public/header"/>
+
+<head>
+
+    <!-- 网页标题 -->
+    <title>联系我们</title>
+
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+<div id="preloader">
+    <div class="loader"></div>
+</div>
+<!-- Section: Page Header -->
+<section class="section-page-header" style="background-image:url(__IMG__/b1.jpg)">
+
+</section>
+<!-- /Section: Page Header -->
+
+<!-- Main -->
+<main class="main-container" style="background-color: rgba(217, 237, 247, 0.19)">
+    <div class="container" style="margin-top: 2%">
+
+        <div class="row" style="margin-bottom: 30px" >
+
+            <!-- Contact Form -->
+            <div class="col-md-8 contact-form fadeIn wow" data-wow-duration="1.3s">
+
+                <h3 class="title">发送消息</h3>
+
+                <form class="form-ajax" method="post">
+                    <input type="hidden" name="form" value="Contact Page">
+                    <div class="row">
+                        <div class="form-group col-md-6">
+                            <input type="text" name="name" class="form-control" placeholder="你的名字... "/>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <input type="text" name="email" class="form-control" placeholder="手机号码... " required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-group col-md-12">
+                            <textarea style="height: 200px" name="message" class="form-control" placeholder="消息内容... "></textarea>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-group col-md-12">
+                            <button type="submit" class="btn btn-theme"><i class="fa fa-fw fa-paper-plane-o"></i> 发送消息
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <!-- /Contact Form -->
+
+            <!-- Address -->
+            <div class="col-md-4 fadeIn wow" data-wow-duration="1.3s" data-wow-delay="0.7s" style="height: 300px">
+
+                <h3 class="title">问询处</h3>
+
+                <ul class="contact-information">
+                    <li><i class="icon fa fa-fw fa-user"></i><span>联系人</span>罗颖</li>
+                    <li><i class="icon fa fa-fw fa-globe"></i><span>地址</span>广东省东莞市南城商务大厦1506</li>
+                    <li><i class="icon fa fa-fw fa-envelope"></i><span>电子邮件</span> clients@example.com</li>
+                    <li><i class="icon fa fa-fw fa-phone"></i><span>手机号</span> +13713311592</li>
+                </ul>
+
+            </div>
+            <!-- /Address -->
+
+        </div>
+
+    </div>
+
+
+        <div style="width:100%; height:400px; font-size:12px" id="map"></div>
+
+
+</main>
+<!-- /Main -->
+
+            <!--js-->
+
+<!-- /SCRIPTS -->
+<include file="Public/foot"/>
+<script type="text/javascript" src="http://api.map.baidu.cn/api?v=2.0&ak=O62zG79hRl1FGwx8BO3jWTmmPaAuz7Ye"></script>
+<script src="__JS__/baidumap.js"></script>
