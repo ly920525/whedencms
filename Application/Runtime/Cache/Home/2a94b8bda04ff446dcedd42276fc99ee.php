@@ -11,24 +11,23 @@
     <!--<link rel="shortcut icon" href="__IMA__/favicon.png">-->
 
     <!-- Style -->
-    <link rel="stylesheet" href="/weiden/Public/Home/css/theme.css">
-    <link rel="stylesheet" href="/weiden/Public/Home/css/erweima.css">
+    <link rel="stylesheet" href="/whedencms/Public/Home/css/theme.css">
+    <link rel="stylesheet" href="/whedencms/Public/Home/css/erweima.css">
 
-    <!-- TODO: 预定义的方案（选择其中一个） -->
-    <link rel="alternate stylesheet" href="/weiden/Public/Home/css/theme-persimmon.css" title="theme-persimmon">
-    <link rel="alternate stylesheet" href="/weiden/Public/Home/css/theme-atomic-tangerine.css" title="theme-atomic-tangerine">
-    <link rel="alternate stylesheet" href="/weiden/Public/Home/css/theme-yellow-sea.css" title="theme-yellow-sea">
-    <link rel="alternate stylesheet" href="/weiden/Public/Home/css/theme-rio-grande.css" title="theme-rio-grande">
-    <link rel="alternate stylesheet" href="/weiden/Public/Home/css/theme-vida-loca.css" title="theme-vida-loca">
-    <link rel="alternate stylesheet" href="/weiden/Public/Home/css/theme-mountain-meadow.css" title="theme-mountain-meadow">
-    <link rel="alternate stylesheet" href="/weiden/Public/Home/css/theme-java.css" title="theme-java">
-    <link rel="alternate stylesheet" href="/weiden/Public/Home/css/theme-mariner.css" title="theme-mariner">
-    <link rel="alternate stylesheet" href="/weiden/Public/Home/css/theme-medium-purple.css" title="theme-medium-purple">
-    <link rel="alternate stylesheet" href="/weiden/Public/Home/css/theme-lavender-magenta.css" title="theme-lavender-magenta">
-    <link rel="alternate stylesheet" href="/weiden/Public/Home/css/footerfont.css" title="footerfont">
-    <link rel="alternate stylesheet" href="/weiden/Public/Home/css/erweima.css" title="footerfont">
-    <link href="/weiden/Public/Home/css/style.css" rel="stylesheet">
-    <link href="/weiden/Public/Home/css/shake.css" rel="stylesheet">
+    <link rel="alternate stylesheet" href="/whedencms/Public/Home/css/theme-persimmon.css" title="theme-persimmon">
+    <link rel="alternate stylesheet" href="/whedencms/Public/Home/css/theme-atomic-tangerine.css" title="theme-atomic-tangerine">
+    <link rel="alternate stylesheet" href="/whedencms/Public/Home/css/theme-yellow-sea.css" title="theme-yellow-sea">
+    <link rel="alternate stylesheet" href="/whedencms/Public/Home/css/theme-rio-grande.css" title="theme-rio-grande">
+    <link rel="alternate stylesheet" href="/whedencms/Public/Home/css/theme-vida-loca.css" title="theme-vida-loca">
+    <link rel="alternate stylesheet" href="/whedencms/Public/Home/css/theme-mountain-meadow.css" title="theme-mountain-meadow">
+    <link rel="alternate stylesheet" href="/whedencms/Public/Home/css/theme-java.css" title="theme-java">
+    <link rel="alternate stylesheet" href="/whedencms/Public/Home/css/theme-mariner.css" title="theme-mariner">
+    <link rel="alternate stylesheet" href="/whedencms/Public/Home/css/theme-medium-purple.css" title="theme-medium-purple">
+    <link rel="alternate stylesheet" href="/whedencms/Public/Home/css/theme-lavender-magenta.css" title="theme-lavender-magenta">
+    <link rel="alternate stylesheet" href="/whedencms/Public/Home/css/footerfont.css" title="footerfont">
+    <link rel="alternate stylesheet" href="/whedencms/Public/Home/css/erweima.css" title="footerfont">
+    <link href="/whedencms/Public/Home/css/style.css" rel="stylesheet">
+    <link href="/whedencms/Public/Home/css/shake.css" rel="stylesheet">
 
     <link rel="shortcut icon" href="favicon.ico">
 
@@ -50,7 +49,7 @@
                     <div class="col-md-7">
                         <a href="<?php echo U('About/baidumap');?>" class="iframe-popup"><span class="icon icon_pin_alt"></span>
                             东莞市南城商务大厦1506</a>
-                        <a href="#"><span class="icon icon_mail_alt"></span> admin@wheden.com</a>
+                        <a href="#"><span class="icon icon_mail_alt"></span>wheden@wheden.com</a>
                         <a href="#"><span class="icon icon_phone"></span> 13637848756</a>
                     </div>
                     <!-- /反馈 -->
@@ -98,11 +97,11 @@
                         <a href="#" class="brand">
 
                             <!-- 商标 -->
-                            <img src="/weiden/Public/Home/images/logo.png" class="logo-big" alt="">
+                            <img src="/whedencms/Public/Home/images/logo.png" class="logo-big" alt="">
                             <!-- /商标 -->
 
                             <!-- Logo Small -->
-                            <img src="/weiden/Public/Home/images/logo-small.png" class="logo-small" alt="">
+                            <img src="/whedencms/Public/Home/images/logo-small.png" class="logo-small" alt="">
                             <!-- /Logo Small -->
 
                         </a>
@@ -157,9 +156,9 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="/weiden/Public/Home/css/font-awesome.min.css" rel="stylesheet" media="all">
-    <link href="/weiden/Public/Home/css/animate.min.css" rel="stylesheet">
-    <link href="/weiden/Public/Home/css/bootstrap-touch-slider.css" rel="stylesheet" media="all">
+    <link href="/whedencms/Public/Home/css/font-awesome.min.css" rel="stylesheet" media="all">
+    <link href="/whedencms/Public/Home/css/animate.min.css" rel="stylesheet">
+    <link href="/whedencms/Public/Home/css/bootstrap-touch-slider.css" rel="stylesheet" media="all">
     <style type="text/css">
         .qc {
             margin: 10px;
@@ -193,14 +192,14 @@
         <!-- Third Slide -->
         <div class="item active">
             <!-- Slide Background -->
-            <img src="/weiden/Public/Home/images/home3.jpg" alt="Bootstrap Touch Slider"  class="slide-image"/>
+            <img src="/whedencms/Public/Home/images/home3.jpg" alt="Bootstrap Touch Slider"  class="slide-image"/>
             <!--<div class="bs-slider-overlay"></div> 背景模糊-->
             <div class="container">
                 <div class="row">
                     <div class="slide-text slide_style_left">
                         <h1 data-animation="animated zoomInRight">欢迎来到 <span class="text-theme">维登科技</span></h1>
                         <p data-animation="animated fadeInLeft">创新领航互联网时代 助力企业发展电商.</p>
-                        <a href="#" target="_blank"  class="btn btn-primary" data-animation="animated fadeInRight">首页</a>
+                        <a href="<?php echo U('Index/index03');?>" class="btn btn-primary" data-animation="animated fadeInRight">首页2</a>
                     </div>
                 </div>
             </div>
@@ -210,7 +209,7 @@
         <!-- Second Slide -->
         <div class="item">
             <!-- Slide Background -->
-            <img src="/weiden/Public/Home/images/home4.jpg" alt="Bootstrap Touch Slider"  class="slide-image"/>
+            <img src="/whedencms/Public/Home/images/home4.jpg" alt="Bootstrap Touch Slider"  class="slide-image"/>
            <!-- <div class="bs-slider-overlay"></div>-->
             <!-- Slide Text Layer -->
             <!--<div class="slide-text slide_style_center">
@@ -226,7 +225,7 @@
         <div class="item">
 
             <!-- Slide Background -->
-            <img src="/weiden/Public/Home/images/home2.jpg" alt="Bootstrap Touch Slider"  class="slide-image"/>
+            <img src="/whedencms/Public/Home/images/home2.jpg" alt="Bootstrap Touch Slider"  class="slide-image"/>
             <!--<div class="bs-slider-overlay"></div>-->
             <!-- Slide Text Layer -->
             <!--<div class="slide-text slide_style_right">
@@ -271,7 +270,7 @@
             <div class="row">
                 <div class="col-sm-4 feature fadeIn wow" data-wow-duration="1.3s" data-wow-delay="0.8s">
                     <div style="height:130px">
-                        <span class="tu-biao"><a href="#" class="dt"><img style="width:40%;" src="/weiden/Public/Home/images/pc1.png" class="img3"></a></span>
+                        <span class="tu-biao"><a href="#" class="dt"><img style="width:40%;" src="/whedencms/Public/Home/images/pc1.png" class="img3"></a></span>
                     </div>
                     <div class="h3 title">
                         <a href="#">PC端</a>
@@ -284,7 +283,7 @@
                 <!-- Feature Block -->
                 <div class="col-sm-4 feature fadeIn wow" data-wow-duration="1.3s">
                     <div style="height:130px">
-                        <span class="tu-biao"><a href="#" class="dt"><img style="width:40%;" src="/weiden/Public/Home/images/yidong.png"class="img1"></a></span>
+                        <span class="tu-biao"><a href="#" class="dt"><img style="width:40%;" src="/whedencms/Public/Home/images/yidong.png"class="img1"></a></span>
                     </div>
                     <div class="h3 title">
                         <a href="#">Android开发服务</a>
@@ -301,7 +300,7 @@
                     <div style="height:130px">
                         <a href="#" class="dt">
 						<span class="tu-biao">
-						<img style="width:40%;" src="/weiden/Public/Home/images/weix.png"class="img2">
+						<img style="width:40%;" src="/whedencms/Public/Home/images/weix.png"class="img2">
 						</span></a>
                     </div>
                     <div class="h3 title">
@@ -316,7 +315,7 @@
                 <!-- Feature Block -->
                 <div class="col-sm-4 feature fadeIn wow" data-wow-duration="1.3s" data-wow-delay="0.8s">
                     <div style="height:130px">
-                        <span class="tu-biao"><a href="#" class="dt"><img style="width:40%;" src="/weiden/Public/Home/images/shouhou.png" class="img4"></a></span>
+                        <span class="tu-biao"><a href="#" class="dt"><img style="width:40%;" src="/whedencms/Public/Home/images/shouhou.png" class="img4"></a></span>
                     </div>
                     <div class="h3 title">
                         <a href="#">运营维护</a>
@@ -351,7 +350,7 @@
                 <div class="col-md-3 col-sm-6 fadeIn wow" data-wow-duration="1.3s" data-wow-delay="0.2s">
                     <a href="http://localhost/wheden.com/index.php/Home/Index/cases.html" class="project-item ">
                         <div class="gallery-image">
-                            <img src="/weiden/Public/Home/images/fc.jpg" alt="彩妆网站设计建设案例" style="width:100%;height: 220px" class="img-responsive">
+                            <img src="/whedencms/Public/Home/images/fc.jpg" alt="彩妆网站设计建设案例" style="width:100%;height: 220px" class="img-responsive">
                         </div>
                         <div class="info">
                             <div class="h4 title">彩妆网站设计建设案例</div>
@@ -364,7 +363,7 @@
                 <div class="col-md-3 col-sm-6 fadeIn wow" data-wow-duration="1.3s" data-wow-delay="0.2s">
                     <a href="http://localhost/wheden.com/index.php/Home/Index/cases.html" class="project-item ">
                         <div class="gallery-image">
-                            <img src="/weiden/Public/Home/images/car.jpg" alt="汽车销售网站建设案例" style="width:100%;height:220px" class="img-responsive">
+                            <img src="/whedencms/Public/Home/images/car.jpg" alt="汽车销售网站建设案例" style="width:100%;height:220px" class="img-responsive">
                         </div>
                         <div class="info">
                             <div class="h4 title">汽车销售网站建设案例</div>
@@ -376,7 +375,7 @@
                 <div class="col-md-3 col-sm-6 fadeIn wow" data-wow-duration="1.3s" data-wow-delay="0.2s">
                     <a href="http://localhost/wheden.com/index.php/Home/Index/cases.html" class="project-item ">
                         <div class="gallery-image">
-                            <img src="/weiden/Public/Home/images/fz.jpg" alt="服装网站设计建设案例" style="width:100%;height: 220px" class="img-responsive">
+                            <img src="/whedencms/Public/Home/images/fz.jpg" alt="服装网站设计建设案例" style="width:100%;height: 220px" class="img-responsive">
                         </div>
                         <div class="info">
                             <div class="h4 title">服装网站设计建设案例</div>
@@ -389,7 +388,7 @@
                 <div class="col-md-3 col-sm-6 fadeIn wow" data-wow-duration="1.3s" data-wow-delay="0.4s">
                     <a href="http://localhost/wheden.com/index.php/Home/Index/cases.html" class="project-item ">
                         <div class="gallery-image">
-                            <img src="/weiden/Public/Home/images/mk.png" alt="东莞麦凯风机有限公司" style="width:100%;height:220px" class="img-responsive">
+                            <img src="/whedencms/Public/Home/images/mk.png" alt="东莞麦凯风机有限公司" style="width:100%;height:220px" class="img-responsive">
                         </div>
                         <div class="info">
                             <div class="h4 title">东莞麦凯风机有限公司</div>
@@ -408,7 +407,7 @@
      <!--   </div>-->
     </section>
 
-    <section id="statistics" class="section" style="background-image:url(/weiden/Public/Home/images/b1.jpg)">
+    <section id="statistics" class="section" style="background-image:url(/whedencms/Public/Home/images/b1.jpg)">
         <div class="container">
 
             <div class="row">
@@ -464,7 +463,7 @@
                             <div class=" col-sm-6 box2">
                                 <div class="box1">
                                     <div class="box-img">
-                                        <img src="/weiden/Public/Home/images/website.jpg" alt="" class="ylw-img-responsive2">
+                                        <img src="/whedencms/Public/Home/images/website.jpg" alt="" class="ylw-img-responsive2">
                                     </div>
                                     <div class="box-content">
                                         <h4 class="title">维登</h4>
@@ -485,7 +484,7 @@
                             <div class=" col-sm-6 box2">
                                 <div class="box1">
                                     <div class="box-img">
-                                        <img src="/weiden/Public/Home/images/website-1.jpg" alt="" class="ylw-img-responsive2">
+                                        <img src="/whedencms/Public/Home/images/website-1.jpg" alt="" class="ylw-img-responsive2">
                                     </div>
                                     <div class="box-content">
                                         <h4 class="title">维登</h4>
@@ -505,7 +504,7 @@
                             <div class=" col-sm-6 box2">
                                 <div class="box1">
                                     <div class="box-img">
-                                        <img src="/weiden/Public/Home/images/website-2.jpg" alt="" class="ylw-img-responsive2">
+                                        <img src="/whedencms/Public/Home/images/website-2.jpg" alt="" class="ylw-img-responsive2">
                                     </div>
                                     <div class="box-content">
                                         <h4 class="title">维登</h4>
@@ -540,7 +539,7 @@
 
                 <!-- Footer Logo -->
                 <div class="logo">
-                    <img src="/weiden/Public/Home/images/wheden.png" alt="">
+                    <img src="/whedencms/Public/Home/images/wheden.png" alt="">
                 </div>
                 <!-- /Footer Logo -->
 
@@ -695,29 +694,29 @@
 <div class="side hidden-xs">
     <ul>
         <li><a href="#">
-            <div class="sidebox"><img src="/weiden/Public/Home/images/zj.png">0769-89865500</div>
+            <div class="sidebox"><img src="/whedencms/Public/Home/images/zj.png">0769-89865500</div>
         </a></li>
         <li>
             <a href="http://wpa.qq.com/msgrd?v=3&uin=710201459&site=qq&menu=yes">
                 <div class="sidebox">
-                    <img src="/weiden/Public/Home/images/drzt.png">710201459
+                    <img src="/whedencms/Public/Home/images/drzt.png">710201459
                 </div>
             </a>
 
         </li>
 
         <li><a href="javascript:void(0);">
-            <div class="sidebox"><img src="/weiden/Public/Home/images/wx2.png">微信</div>
+            <div class="sidebox"><img src="/whedencms/Public/Home/images/wx2.png">微信</div>
         </a></li>
 
     </ul>
     <div class="floating_ck">
         <dl>
 
-            <dd class="qrcord" style="background-image: url(/weiden/Public/Home/images/ewm.png); width: 45px; height: 36px" >
+            <dd class="qrcord" style="background-image: url(/whedencms/Public/Home/images/ewm.png); width: 45px; height: 36px" >
 
                 <div class="floating_left floating_ewm" style="height:201px;">
-                    <i style="background-image: url(/weiden/Public/Home/images/ewm.jpg)"></i>
+                    <i style="background-image: url(/whedencms/Public/Home/images/ewm.jpg)"></i>
                     <p class="qrcord_p01">扫一扫<br>关注维登了解更多</p>
 
 
@@ -739,27 +738,26 @@
 <!-- Modal: Result Message -->
 
 <!-- js -->
-<script src="/weiden/Public/Home/js/jquery-2.2.0.min.js"></script>
-<script src="/weiden/Public/Home/js/bootstrap.min.js"></script>
-<script src="/weiden/Public/Home/js/owl.carousel.min.js"></script>
-<script src="/weiden/Public/Home/js/jquery.magnific-popup.min.js"></script>
-<script src="/weiden/Public/Home/js/jquery.validate.min.js"></script>
-<script src="/weiden/Public/Home/js/jquery.stellar.min.js"></script>
-<script src="/weiden/Public/Home/js/wow.min.js"></script>
-<script src="/weiden/Public/Home/js/masonry.pkgd.min.js"></script>
-<script src="/weiden/Public/Home/js/jquery.appear.js"></script>
-<script src="/weiden/Public/Home/js/jquery.animateNumber.min.js"></script>
-<script src="/weiden/Public/Home/js/general.js"></script>
-<script src="/weiden/Public/Home/js/timezhou.js"></script>
-<script src="/weiden/Public/Home/js/bgcolor.js"></script>
-<script src="/weiden/Public/Home/js/kefu.js"></script>
-<script src="/weiden/Public/Home/js/jquery.FainPic.js"></script>
+<script src="/whedencms/Public/Home/js/jquery-2.2.0.min.js"></script>
+<script src="/whedencms/Public/Home/js/bootstrap.min.js"></script>
+<script src="/whedencms/Public/Home/js/owl.carousel.min.js"></script>
+<script src="/whedencms/Public/Home/js/jquery.magnific-popup.min.js"></script>
+<script src="/whedencms/Public/Home/js/jquery.validate.min.js"></script>
+<script src="/whedencms/Public/Home/js/jquery.stellar.min.js"></script>
+<script src="/whedencms/Public/Home/js/wow.min.js"></script>
+<script src="/whedencms/Public/Home/js/masonry.pkgd.min.js"></script>
+<script src="/whedencms/Public/Home/js/jquery.appear.js"></script>
+<script src="/whedencms/Public/Home/js/jquery.animateNumber.min.js"></script>
+<script src="/whedencms/Public/Home/js/general.js"></script>
+<script src="/whedencms/Public/Home/js/timezhou.js"></script>
+<script src="/whedencms/Public/Home/js/bgcolor.js"></script>
+<script src="/whedencms/Public/Home/js/kefu.js"></script>
+<script src="/whedencms/Public/Home/js/jquery.FainPic.js"></script>
 
 
 <!-- /SCRIPTS -->
 
 
-<!-- TODO: Remove this block, Demo-version only -->
 <!-- Styleswitcher -->
 <div id="styleswitcher" class="styleswitcher">
 <div class="styleswitcher-content">
@@ -794,16 +792,16 @@
 <div class="styleswitcher-button vertical-middle"><i class="fa fa-gear"></i></div>
 </div>
 
-<link rel="stylesheet" type="text/css" href="/weiden/Public/Home/demo/styleswitcher.css" property="">
-<script src="/weiden/Public/Home/demo/styleswitcher.js"></script>
+<link rel="stylesheet" type="text/css" href="/whedencms/Public/Home/demo/styleswitcher.css" property="">
+<script src="/whedencms/Public/Home/demo/styleswitcher.js"></script>
 
 <!-- /Styleswitcher -->
 
 </body>
 </html>
 
-<script src="/weiden/Public/Home/js/jquery.touchSwipe.min.js"></script>
-<script src="/weiden/Public/Home/js/bootstrap-touch-slider.js"></script>
+<script src="/whedencms/Public/Home/js/jquery.touchSwipe.min.js"></script>
+<script src="/whedencms/Public/Home/js/bootstrap-touch-slider.js"></script>
 <script type="text/javascript">
     $('#bootstrap-touch-slider').bsTouchSlider();
 </script>
