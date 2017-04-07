@@ -15,7 +15,7 @@
     <div class="logo margin-big-left fadein-top">
         <h1><img src="/whedencms/Public/Admin/images/y.jpg" class="radius-circle rotate-hover" height="50" alt="" />后台管理中心</h1>
     </div>
-    <div class="head-l"><a class="button button-little bg-green" href="" target="_blank"><span class="icon-home"></span> 前台首页</a> &nbsp;&nbsp;<a href="##" class="button button-little bg-blue"><span class="icon-wrench"></span> 清除缓存</a> &nbsp;&nbsp;<a class="button button-little bg-red" href="login.html"><span class="icon-power-off"></span> 退出登录</a> </div>
+    <div class="head-l"><a href="<?php echo U('Home/index/index');?>" class="button button-little bg-green" target="_blank"><span class="icon-home"></span> 前台首页</a> &nbsp;&nbsp;<a href="##" class="button button-little bg-blue"><span class="icon-wrench"></span> 清除缓存</a> &nbsp;&nbsp;<a class="button button-little bg-red" href="login.html"><span class="icon-power-off"></span> 退出登录</a> </div>
 </div>
 <div class="leftnav">
     <div class="leftnav-title"><strong><span class="icon-list"></span>菜单列表</strong></div>
@@ -38,7 +38,7 @@
     <!-- 服务管理 -->
     <h2><span class="icon-pencil-square-o"></span>服务管理</h2>
     <ul>
-        <li><a href="<?php echo U('Service/list');?>" target="right"><span class="icon-caret-right"></span>内容管理</a></li>
+        <li><a href="<?php echo U('Service/lists');?>" target="right"><span class="icon-caret-right"></span>内容管理</a></li>
         <li><a href="<?php echo U('Service/cate');?>" target="right"><span class="icon-caret-right"></span>分类管理</a></li>
     </ul>
     <!-- 服务管理结束 -->

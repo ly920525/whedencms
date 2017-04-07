@@ -57,7 +57,7 @@
                     <!--社交软件 -->
                     <div class="col-md-5">
                         <ul class="social">
-                            <li><a href="http://wpa.qq.com/msgrd?v=3&uin=710201459&site=qq&menu=yes" class="fa fa-fw fa-qq"></a></li>
+                            <li><a href="http://wpa.qq.com/msgrd?v=3&uin=710201459&site=qq&menu=yes"  target="_blank" class="fa fa-fw fa-qq"></a></li>
                             <li><a href="#" class="fa fa-fw fa-wechat"></a></li>
                             <li><a href="#" class="fa fa-fw fa-weibo"></a></li>
                         </ul>
@@ -115,22 +115,22 @@
                         <ul class="nav navbar-nav navbar-right">
                             <li><a href="<?php echo U('Index/index');?>">首页</a></li>
                             <li class="dropdown">
-                                <a href="<?php echo U('about/about');?>" class="dropdown-toggle">关于我们</a>
+                                <a href="<?php echo U('about/about');?>" class="dropdown-toggle">关于维登</a>
                                 <ul class="dropdown-menu">
-                                    <li><a href="<?php echo U('about/zhaopin');?>">招聘</a></li>
+                                    <li><a href="<?php echo U('about/zhaopin');?>">招聘信息</a></li>
                                     <li><a href="<?php echo U('about/lists');?>">公司环境</a></li>
                                 </ul>
                             </li>
                             <li class="dropdown">
-                                <a href="<?php echo U('service/service');?>" class="dropdown-toggle">服务</a>
+                                <a href="<?php echo U('service/service');?>" class="dropdown-toggle">服务范围</a>
                             </li>
                             <li class="dropdown">
-                                <a href="<?php echo U('news/news');?>" class="dropdown-toggle">新闻</a>
+                                <a href="<?php echo U('news/news');?>" class="dropdown-toggle">新闻资讯</a>
                             </li>
                             <li class="dropdown">
-                                <a href="<?php echo U('cases/cases');?>" class="dropdown-toggle">案例</a>
+                                <a href="<?php echo U('cases/cases');?>" class="dropdown-toggle">项目案例</a>
                             </li>
-                            <li><a href="<?php echo U('contact/contact');?>">联系</a></li>
+                            <li><a href="<?php echo U('contact/contact');?>">联系我们</a></li>
                         </ul>
                     </div>
                     <!-- /导航 -->
@@ -651,7 +651,7 @@
 
                 <!-- Footer Social -->
                 <ul class="social-inline">
-                    <li><a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=710201459&site=qq&menu=yes" class="fa fa-fw fa-qq"></a></li>
+                    <li><a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=710201459&site=qq&menu=yes"  target="_blank" class="fa fa-fw fa-qq"></a></li>
                     <li><a href="#" class="fa fa-fw fa-weixin"></a></li>
                     <li><a href="#" class="fa fa-fw fa-weibo"></a></li>
                 </ul>
@@ -720,12 +720,14 @@
 			<div class="col-md-3 col-xs-12 footer-col di-bu">
                 <h3 class="title text-theme">网站菜单</h3>
                 <ul class="menu">
-                    <li><a href="#">首页</a></li>
-                    <li><a href="#">关于我们</a></li>
-                    <li><a href="#">服务</a></li>
-                    <li><a href="#">公司简介</a></li>
-                    <li><a href="#">新闻</a></li>
-                    <li><a href="#">联系</a></li>
+                    <li><a href="<?php echo U('Index/index');?>">首页</a></li>
+                    <li><a href="<?php echo U('about/about');?>">关于维登</a></li>
+                    <li><a href="<?php echo U('about/zhaopin');?>">招聘信息</a></li>
+                    <li><a href="<?php echo U('about/lists');?>">公司环境</a></li>
+                    <li><a href="<?php echo U('service/service');?>">服务范围</a></li>
+                    <li><a href="<?php echo U('cases/cases');?>">项目案列</a></li>
+                    <li><a href="<?php echo U('news/news');?>">新闻资讯</a></li>
+                    <li><a href="<?php echo U('contact/contact');?>">联系我们</a></li>
                 </ul>
             </div>
 
@@ -736,7 +738,7 @@
                     <div class="col-md-6 col-xs-12 col-md-offset-3" style="margin-left: -55px;";>
                         <header class="text-center">
                             <h2 class="section-title"> <span class="text-theme">留言 维登</span></h2>
-                            
+
                         </header>
                     </div>
                 </div>-->
