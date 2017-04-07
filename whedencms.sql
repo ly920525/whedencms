@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50617
 File Encoding         : 65001
 
-Date: 2017-04-07 11:29:16
+Date: 2017-04-07 12:01:37
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -34,6 +34,10 @@ CREATE TABLE `wd_admin` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- ----------------------------
+-- Records of wd_admin
+-- ----------------------------
+
+-- ----------------------------
 -- Table structure for wd_gps
 -- ----------------------------
 DROP TABLE IF EXISTS `wd_gps`;
@@ -48,6 +52,10 @@ CREATE TABLE `wd_gps` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- ----------------------------
+-- Records of wd_gps
+-- ----------------------------
+
+-- ----------------------------
 -- Table structure for wd_lianxi
 -- ----------------------------
 DROP TABLE IF EXISTS `wd_lianxi`;
@@ -59,6 +67,10 @@ CREATE TABLE `wd_lianxi` (
   `url` varchar(50) NOT NULL COMMENT '链接',
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- ----------------------------
+-- Records of wd_lianxi
+-- ----------------------------
 
 -- ----------------------------
 -- Table structure for wd_link
@@ -75,6 +87,10 @@ CREATE TABLE `wd_link` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 COMMENT='链接表';
 
 -- ----------------------------
+-- Records of wd_link
+-- ----------------------------
+
+-- ----------------------------
 -- Table structure for wd_login_log
 -- ----------------------------
 DROP TABLE IF EXISTS `wd_login_log`;
@@ -86,6 +102,10 @@ CREATE TABLE `wd_login_log` (
   `outtime` datetime NOT NULL DEFAULT '0000-00-00 00:00:00',
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- ----------------------------
+-- Records of wd_login_log
+-- ----------------------------
 
 -- ----------------------------
 -- Table structure for wd_message
@@ -102,20 +122,43 @@ CREATE TABLE `wd_message` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- ----------------------------
+-- Records of wd_message
+-- ----------------------------
+
+-- ----------------------------
 -- Table structure for wd_news
 -- ----------------------------
 DROP TABLE IF EXISTS `wd_news`;
 CREATE TABLE `wd_news` (
-  `id` smallint(5) NOT NULL AUTO_INCREMENT COMMENT '新闻表',
-  `newtitle` varchar(50) NOT NULL COMMENT '新闻标题',
-  `text` text NOT NULL COMMENT '文本内容',
-  `type` smallint(1) NOT NULL COMMENT '新闻类型（公司，行业）',
-  `newtime` datetime NOT NULL COMMENT '新闻发布时间',
-  `state` tinyint(1) NOT NULL COMMENT '文章状态（开启关闭）',
-  `issuer` varchar(20) NOT NULL COMMENT '发布人',
-  `click` int(5) NOT NULL,
+  `id` int(5) NOT NULL AUTO_INCREMENT,
+  `type` varchar(50) NOT NULL,
+  `state` tinyint(1) NOT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- ----------------------------
+-- Records of wd_news
+-- ----------------------------
+
+-- ----------------------------
+-- Table structure for wd_news_content
+-- ----------------------------
+DROP TABLE IF EXISTS `wd_news_content`;
+CREATE TABLE `wd_news_content` (
+  `id` int(5) NOT NULL AUTO_INCREMENT,
+  `pid` int(5) NOT NULL,
+  `tetle` varchar(100) NOT NULL,
+  `img_url` varchar(100) NOT NULL,
+  `issuer` varchar(100) NOT NULL,
+  `time` datetime NOT NULL,
+  `jianjie` varchar(100) NOT NULL,
+  `text` text NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- ----------------------------
+-- Records of wd_news_content
+-- ----------------------------
 
 -- ----------------------------
 -- Table structure for wd_onetitle
@@ -131,6 +174,10 @@ CREATE TABLE `wd_onetitle` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- ----------------------------
+-- Records of wd_onetitle
+-- ----------------------------
+
+-- ----------------------------
 -- Table structure for wd_password_log
 -- ----------------------------
 DROP TABLE IF EXISTS `wd_password_log`;
@@ -142,6 +189,10 @@ CREATE TABLE `wd_password_log` (
   `time` datetime NOT NULL COMMENT '修改时间',
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- ----------------------------
+-- Records of wd_password_log
+-- ----------------------------
 
 -- ----------------------------
 -- Table structure for wd_product
@@ -160,6 +211,10 @@ CREATE TABLE `wd_product` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- ----------------------------
+-- Records of wd_product
+-- ----------------------------
+
+-- ----------------------------
 -- Table structure for wd_service
 -- ----------------------------
 DROP TABLE IF EXISTS `wd_service`;
@@ -169,8 +224,13 @@ CREATE TABLE `wd_service` (
   `img_url` varchar(100) NOT NULL,
   `type` int(2) NOT NULL,
   `text` text NOT NULL,
+  `jianjie` varchar(100) NOT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- ----------------------------
+-- Records of wd_service
+-- ----------------------------
 
 -- ----------------------------
 -- Table structure for wd_service_classify
@@ -186,6 +246,10 @@ CREATE TABLE `wd_service_classify` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- ----------------------------
+-- Records of wd_service_classify
+-- ----------------------------
+
+-- ----------------------------
 -- Table structure for wd_twotitle
 -- ----------------------------
 DROP TABLE IF EXISTS `wd_twotitle`;
@@ -199,6 +263,10 @@ CREATE TABLE `wd_twotitle` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- ----------------------------
+-- Records of wd_twotitle
+-- ----------------------------
+
+-- ----------------------------
 -- Table structure for wd_visit_log
 -- ----------------------------
 DROP TABLE IF EXISTS `wd_visit_log`;
@@ -209,6 +277,10 @@ CREATE TABLE `wd_visit_log` (
   `state` tinyint(1) NOT NULL COMMENT '是否访问中？',
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- ----------------------------
+-- Records of wd_visit_log
+-- ----------------------------
 
 -- ----------------------------
 -- Table structure for wd_web
@@ -230,6 +302,10 @@ CREATE TABLE `wd_web` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- ----------------------------
+-- Records of wd_web
+-- ----------------------------
+
+-- ----------------------------
 -- Table structure for wd_xingwei_log
 -- ----------------------------
 DROP TABLE IF EXISTS `wd_xingwei_log`;
@@ -244,3 +320,7 @@ CREATE TABLE `wd_xingwei_log` (
   `type` varchar(10) NOT NULL COMMENT '类型：增删改',
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- ----------------------------
+-- Records of wd_xingwei_log
+-- ----------------------------
