@@ -11,15 +11,6 @@ class PublicController extends Controller
         $this->display();
     }
 
-    public function app()
-    {
-        $this->display();
-    }
-
-    public function back()
-    {
-        $this->display();
-    }
 
     public function foot()
     {

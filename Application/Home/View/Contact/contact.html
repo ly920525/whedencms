@@ -31,24 +31,24 @@
 
                 <h3 class="title">发送消息</h3>
 
-                <form class="form-ajax" method="post">
+                <form class="form-ajax"   enctype="multipart/form-data" method="post">
                     <input type="hidden" name="form" value="Contact Page">
                     <div class="row">
                         <div class="form-group col-md-6">
-                            <input type="text" name="name" class="form-control" placeholder="你的名字... "/>
+                            <input type="text" name="name" class="form-control" id="name" placeholder="你的名字... "/>
                         </div>
                         <div class="form-group col-md-6">
-                            <input type="text" name="email" class="form-control" placeholder="手机号码... " required>
+                            <input type="text" name="phone" class="form-control" id="phone" placeholder="手机号码... " required>
                         </div>
                     </div>
                     <div class="row">
                         <div class="form-group col-md-12">
-                            <textarea style="height: 200px" name="message" class="form-control" placeholder="消息内容... "></textarea>
+                            <textarea style="height: 200px" name="content" class="form-control" id="content" placeholder="消息内容... "></textarea>
                         </div>
                     </div>
                     <div class="row">
                         <div class="form-group col-md-12">
-                            <button type="submit" class="btn btn-theme"><i class="fa fa-fw fa-paper-plane-o"></i> 发送消息
+                            <button type="button" class="btn btn-theme" onclick="message.liuyan()"><i class="fa fa-fw fa-paper-plane-o"></i> 发送消息
                             </button>
                         </div>
                     </div>
@@ -87,4 +87,5 @@
 <!-- /SCRIPTS -->
 <include file="Public/foot"/>
 <script type="text/javascript" src="http://api.map.baidu.cn/api?v=2.0&ak=O62zG79hRl1FGwx8BO3jWTmmPaAuz7Ye"></script>
-<script src="__JS__/baidumap.js"></script>
+<script type="text/javascript" src="__JS__/baidumap.js"></script>
+<script type="text/javascript" src="__JS__/layer/message.js"></script>
