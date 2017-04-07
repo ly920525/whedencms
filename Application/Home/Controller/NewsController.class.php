@@ -14,4 +14,17 @@ class NewsController extends Controller
     {
         $this->display();
     }
+    public function app()
+    {
+        $this->display();
+    }
+
+    public function back()
+    {
+        $this->display();
+    }
+    public function weixin()
+    {
+        $this->display();
+    }
 }
