@@ -20,9 +20,9 @@
   <table class="table table-hover text-center">
     <tr>
       <th width="5%">ID</th>     
-      <th>栏目名称</th>  
-      <th>描述</th>
+      <th>栏目名称</th>
       <th>创建时间</th>
+        <th>描述</th>
       <th>排序</th>
       <th width="250">操作</th>
     </tr>
@@ -30,8 +30,8 @@
       <?php if(is_array($lists)): $i = 0; $__LIST__ = $lists;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><tr>
       <td><?php echo ($vo["id"]); ?></td>
       <td><?php echo ($vo["name"]); ?></td>
-      <td><?php echo ($vo["decs"]); ?></td>
       <td><?php echo ($vo["update_time"]); ?></td>
+      <td><?php echo ($vo["content"]); ?></td>
       <td>1</td>
       <td>
       <div class="button-group">

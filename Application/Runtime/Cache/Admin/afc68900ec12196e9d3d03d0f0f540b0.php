@@ -1,4 +1,17 @@
-<include file="Public/head"/>
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="renderer" content="webkit">
+    <title></title>
+    <link rel="stylesheet" href="/whedencms/Public/Admin/css/pintuer.css">
+    <link rel="stylesheet" href="/whedencms/Public/Admin/css/admin.css">
+    <script src="/whedencms/Public/Admin/js/jquery.js"></script>
+    <script src="/whedencms/Public/Admin/js/pintuer.js"></script>
+</head>
+<body>
 
 <head>
     <title>修改栏目内容</title>
@@ -17,7 +30,7 @@
           <label>栏目名称：</label>
         </div>
         <div class="field">
-          <input type="text" class="input w50" name="name" value="{$data.name}" data-validate="required:请输入标题" />
+          <input type="text" class="input w50" name="name" value="<?php echo ($data["name"]); ?>" data-validate="required:请输入标题" />
           <div class="tips"></div>
         </div>
       </div> 
@@ -26,7 +39,7 @@
           <label>栏目图片：</label>
         </div>
         <div class="field">
-            <div class="imgs"><img src="__IMAGE__/{$data.img_url}" width="100" height="100" /></div>
+            <div class="imgs"><img src="/whedencms/Uploads/<?php echo ($data["img_url"]); ?>" width="100" height="100" /></div>
           <input type="file" name="file" class="button bg-blue margin-left" id="image1" value="+ 浏览上传"  style="float:left;">
           <div class="tipss">图片尺寸：1920*200</div>
         </div>
@@ -36,7 +49,7 @@
           <label>关键字描述：</label>
         </div>
         <div class="field">
-          <textarea name="content" class="input" style="height:100px;" >{$data.content}</textarea>
+          <textarea type="text" class="input" name="jian" style="height:100px;" ><?php echo ($data["jian"]); ?></textarea>
         </div>
      </div>
     

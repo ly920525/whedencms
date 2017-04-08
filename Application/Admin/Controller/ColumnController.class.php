@@ -13,10 +13,10 @@ class ColumnController extends CommonController {
     }
     
     //添加数据
-    public function add(){              
+    public function add(){
         if(IS_POST){
             $gps = D('Gps');
-            $gps->create();          // 创建service数据对象，默认通过表单提交的数据进行创建
+            $gps->create();          // 创建Gps数据对象，默认通过表单提交的数据进行创建
             $gps->update_time = date('Y-m-d H:i:s');
             if($_FILES['file']['error']==0){
                 $img_url=$this->uploadOne($_FILES['file']);
@@ -26,6 +26,8 @@ class ColumnController extends CommonController {
             }
 
             $gps->add();            // 把数据对象添加到数据库
+
+            //var_dump($gq);die;
             $this->success('添加成功',U('Admin/Column/column'));die;
         }
 

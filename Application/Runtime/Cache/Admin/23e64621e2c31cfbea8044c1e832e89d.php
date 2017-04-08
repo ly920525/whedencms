@@ -36,14 +36,16 @@
           <div class="tipss">图片尺寸：1920*200</div>
         </div>
       </div>
-      <div class="form-group">
-        <div class="label">
-          <label>关键字描述：</label>
+
+        <div class="form-group">
+            <div class="label">
+                <label>栏目描述：</label>
+            </div>
+            <div class="field">
+                <input name="content" class="input" placeholder="请输入栏目描述" style="height:100px; border:1px solid #ddd;">
+                <div class="tips"></div>
+            </div>
         </div>
-        <div class="field">
-          <textarea type="text" class="input" name="desc" placeholder="请输入关键字描述" style="height:100px;" ></textarea>
-        </div>
-     </div>
     
      <div class="form-group">
         <div class="label">
