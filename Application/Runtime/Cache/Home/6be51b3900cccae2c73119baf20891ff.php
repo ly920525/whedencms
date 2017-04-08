@@ -1,5 +1,5 @@
 <?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
-<html lang="en">
+<html lang="cn">
 <head>
 
     <!-- Meta -->
@@ -47,10 +47,10 @@
 
                     <!-- 地址电话 -->
                     <div class="col-md-7">
-                        <a href="<?php echo U('About/baidumap');?>" class="iframe-popup"><span class="icon icon_pin_alt"></span>
+                        <a href="<?php echo U('contact/baidumap');?>" class="iframe-popup"><span class="icon icon_pin_alt"></span>
                             东莞市南城商务大厦1506</a>
                         <a href="#"><span class="icon icon_mail_alt"></span>wheden@wheden.com</a>
-                        <a href="#"><span class="icon icon_phone"></span> 13637848756</a>
+                        <a href="#"><span class="icon icon_phone"></span>0769-89865500</a>
                     </div>
                     <!-- /反馈 -->
 
@@ -316,7 +316,7 @@
 
                 <!-- Footer Social -->
                 <ul class="social-inline">
-                    <li><a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=710201459&site=qq&menu=yes"  target="_blank" class="fa fa-fw fa-qq"></a></li>
+                    <li><a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=710201459&site=qq&menu=yes" class="fa fa-fw fa-qq"></a></li>
                     <li><a href="#" class="fa fa-fw fa-weixin"></a></li>
                     <li><a href="#" class="fa fa-fw fa-weibo"></a></li>
                 </ul>
@@ -370,7 +370,7 @@
                         </div>
                         <div class="row">
                             <div class="form-group col-md-12 col-xs-12">
-                                <textarea name="message" class="form-control" placeholder="内容... "> </textarea>
+                                <textarea name="message" class="form-control" placeholder="您的需求...."> </textarea>
                             </div>
                         </div>
                         <div class="row">
@@ -385,18 +385,69 @@
 			<div class="col-md-3 col-xs-12 footer-col di-bu">
                 <h3 class="title text-theme">网站菜单</h3>
                 <ul class="menu">
-                    <li><a href="<?php echo U('Index/index');?>">首页</a></li>
-                    <li><a href="<?php echo U('about/about');?>">关于维登</a></li>
-                    <li><a href="<?php echo U('about/zhaopin');?>">招聘信息</a></li>
-                    <li><a href="<?php echo U('about/lists');?>">公司环境</a></li>
-                    <li><a href="<?php echo U('service/service');?>">服务范围</a></li>
-                    <li><a href="<?php echo U('cases/cases');?>">项目案列</a></li>
-                    <li><a href="<?php echo U('news/news');?>">新闻资讯</a></li>
-                    <li><a href="<?php echo U('contact/contact');?>">联系我们</a></li>
+                    <li><a href="#">首页</a></li>
+                    <li><a href="#">关于我们</a></li>
+                    <li><a href="#">服务</a></li>
+                    <li><a href="#">公司简介</a></li>
+                    <li><a href="#">新闻</a></li>
+                    <li><a href="#">联系</a></li>
                 </ul>
             </div>
+
+            <!--<div class="col-md-4 col-xs-12 footer-col di-bu">
+
+                &lt;!&ndash; Section Header &ndash;&gt;
+                <div class="row">
+                    <div class="col-md-6 col-xs-12 col-md-offset-3" style="margin-left: -55px;";>
+                        <header class="text-center">
+                            <h2 class="section-title"> <span class="text-theme">留言 维登</span></h2>
+                            
+                        </header>
+                    </div>
+                </div>-->
+                <!-- /Section Header -->
+
+                <!-- Section Content -->
+                <!--<div class="row section-content">
+                    <div class="col-md-8  col-xs-12 col-md-offset-2 contact-form  wow biaodan" style="margin-left: -250px;">
+                        <form class="form-ajax" method="post">
+
+                            <input type="hidden" name="form" value="Contact">
+
+                            <div class="row" style="width: 700px;">
+                                <div class="form-group col-md-6 col-xs-12" style="width: 251px;">
+                                    <input type="text" name="name" class="form-control" placeholder="姓名... " required style="width: 250px;">
+                                </div>
+                                <div class="form-group col-md-6 col-xs-12" style="margin-left: 10px;width: 251px;">
+                                    <input type="text" name="email" class="form-control" placeholder="电话号码... " required style="width: 250px";>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="form-group col-md-12 col-xs-12">
+                                    <textarea name="message" class="form-control" placeholder="内容... " style="width: 512px;"> </textarea>
+                                </div>
+                            </div>
+
+                            <div class="row" style="margin-left: 180px;">
+                                <div class="form-group col-md-12 text-center col-xs-12">
+                                    <button type="submit" class="btn btn-theme"><i class="fa fa-fw fa-paper-plane-o"></i> 发送消息</button>
+                                </div>
+                            </div>
+
+                        </form>
+                    </div>
+                </div>-->
+                <!-- /Section Content -->
+
             </div>   
         </div>
+    </div>
+    <div class="container pp" align="center">
+        <p>友情链接</p>
+        <p><a href="http://www.baidu.com">百度</a>
+           <span><a href="#">腾讯</a></span>
+        </p>
     </div>
 </footer>
 <!-- /Footer -->
@@ -465,11 +516,12 @@
 <script src="/whedencms/Public/Home/js/bgcolor.js"></script>
 <script src="/whedencms/Public/Home/js/kefu.js"></script>
 <script src="/whedencms/Public/Home/js/jquery.FainPic.js"></script>
-<script src="/whedencms/Public/Home/js/layer/layer.js"></script>
-<script src="/whedencms/Public/Home/js/layer/dialog.js"></script>
+
+
 <!-- /SCRIPTS -->
 
 
+<!-- TODO: Remove this block, Demo-version only -->
 <!-- Styleswitcher -->
 <div id="styleswitcher" class="styleswitcher">
 <div class="styleswitcher-content">

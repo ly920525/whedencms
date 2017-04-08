@@ -1,5 +1,5 @@
 <?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
-<html lang="en">
+<html lang="cn">
 <head>
 
     <!-- Meta -->
@@ -11,24 +11,23 @@
     <!--<link rel="shortcut icon" href="__IMA__/favicon.png">-->
 
     <!-- Style -->
-    <link rel="stylesheet" href="/weiden/Public/Home/css/theme.css">
-    <link rel="stylesheet" href="/weiden/Public/Home/css/erweima.css">
+    <link rel="stylesheet" href="/whedencms/Public/Home/css/theme.css">
+    <link rel="stylesheet" href="/whedencms/Public/Home/css/erweima.css">
 
-    <!-- TODO: 预定义的方案（选择其中一个） -->
-    <link rel="alternate stylesheet" href="/weiden/Public/Home/css/theme-persimmon.css" title="theme-persimmon">
-    <link rel="alternate stylesheet" href="/weiden/Public/Home/css/theme-atomic-tangerine.css" title="theme-atomic-tangerine">
-    <link rel="alternate stylesheet" href="/weiden/Public/Home/css/theme-yellow-sea.css" title="theme-yellow-sea">
-    <link rel="alternate stylesheet" href="/weiden/Public/Home/css/theme-rio-grande.css" title="theme-rio-grande">
-    <link rel="alternate stylesheet" href="/weiden/Public/Home/css/theme-vida-loca.css" title="theme-vida-loca">
-    <link rel="alternate stylesheet" href="/weiden/Public/Home/css/theme-mountain-meadow.css" title="theme-mountain-meadow">
-    <link rel="alternate stylesheet" href="/weiden/Public/Home/css/theme-java.css" title="theme-java">
-    <link rel="alternate stylesheet" href="/weiden/Public/Home/css/theme-mariner.css" title="theme-mariner">
-    <link rel="alternate stylesheet" href="/weiden/Public/Home/css/theme-medium-purple.css" title="theme-medium-purple">
-    <link rel="alternate stylesheet" href="/weiden/Public/Home/css/theme-lavender-magenta.css" title="theme-lavender-magenta">
-    <link rel="alternate stylesheet" href="/weiden/Public/Home/css/footerfont.css" title="footerfont">
-    <link rel="alternate stylesheet" href="/weiden/Public/Home/css/erweima.css" title="footerfont">
-    <link href="/weiden/Public/Home/css/style.css" rel="stylesheet">
-    <link href="/weiden/Public/Home/css/shake.css" rel="stylesheet">
+    <link rel="alternate stylesheet" href="/whedencms/Public/Home/css/theme-persimmon.css" title="theme-persimmon">
+    <link rel="alternate stylesheet" href="/whedencms/Public/Home/css/theme-atomic-tangerine.css" title="theme-atomic-tangerine">
+    <link rel="alternate stylesheet" href="/whedencms/Public/Home/css/theme-yellow-sea.css" title="theme-yellow-sea">
+    <link rel="alternate stylesheet" href="/whedencms/Public/Home/css/theme-rio-grande.css" title="theme-rio-grande">
+    <link rel="alternate stylesheet" href="/whedencms/Public/Home/css/theme-vida-loca.css" title="theme-vida-loca">
+    <link rel="alternate stylesheet" href="/whedencms/Public/Home/css/theme-mountain-meadow.css" title="theme-mountain-meadow">
+    <link rel="alternate stylesheet" href="/whedencms/Public/Home/css/theme-java.css" title="theme-java">
+    <link rel="alternate stylesheet" href="/whedencms/Public/Home/css/theme-mariner.css" title="theme-mariner">
+    <link rel="alternate stylesheet" href="/whedencms/Public/Home/css/theme-medium-purple.css" title="theme-medium-purple">
+    <link rel="alternate stylesheet" href="/whedencms/Public/Home/css/theme-lavender-magenta.css" title="theme-lavender-magenta">
+    <link rel="alternate stylesheet" href="/whedencms/Public/Home/css/footerfont.css" title="footerfont">
+    <link rel="alternate stylesheet" href="/whedencms/Public/Home/css/erweima.css" title="footerfont">
+    <link href="/whedencms/Public/Home/css/style.css" rel="stylesheet">
+    <link href="/whedencms/Public/Home/css/shake.css" rel="stylesheet">
 
     <link rel="shortcut icon" href="favicon.ico">
 
@@ -48,17 +47,17 @@
 
                     <!-- 地址电话 -->
                     <div class="col-md-7">
-                        <a href="<?php echo U('About/baidumap');?>" class="iframe-popup"><span class="icon icon_pin_alt"></span>
+                        <a href="<?php echo U('contact/baidumap');?>" class="iframe-popup"><span class="icon icon_pin_alt"></span>
                             东莞市南城商务大厦1506</a>
-                        <a href="#"><span class="icon icon_mail_alt"></span> admin@wheden.com</a>
-                        <a href="#"><span class="icon icon_phone"></span> 13637848756</a>
+                        <a href="#"><span class="icon icon_mail_alt"></span>wheden@wheden.com</a>
+                        <a href="#"><span class="icon icon_phone"></span>0769-89865500</a>
                     </div>
                     <!-- /反馈 -->
 
                     <!--社交软件 -->
                     <div class="col-md-5">
                         <ul class="social">
-                            <li><a href="http://wpa.qq.com/msgrd?v=3&uin=710201459&site=qq&menu=yes" class="fa fa-fw fa-qq"></a></li>
+                            <li><a href="http://wpa.qq.com/msgrd?v=3&uin=710201459&site=qq&menu=yes"  target="_blank" class="fa fa-fw fa-qq"></a></li>
                             <li><a href="#" class="fa fa-fw fa-wechat"></a></li>
                             <li><a href="#" class="fa fa-fw fa-weibo"></a></li>
                         </ul>
@@ -98,11 +97,11 @@
                         <a href="#" class="brand">
 
                             <!-- 商标 -->
-                            <img src="/weiden/Public/Home/images/logo.png" class="logo-big" alt="">
+                            <img src="/whedencms/Public/Home/images/logo.png" class="logo-big" alt="">
                             <!-- /商标 -->
 
                             <!-- Logo Small -->
-                            <img src="/weiden/Public/Home/images/logo-small.png" class="logo-small" alt="">
+                            <img src="/whedencms/Public/Home/images/logo-small.png" class="logo-small" alt="">
                             <!-- /Logo Small -->
 
                         </a>
@@ -116,22 +115,22 @@
                         <ul class="nav navbar-nav navbar-right">
                             <li><a href="<?php echo U('Index/index');?>">首页</a></li>
                             <li class="dropdown">
-                                <a href="<?php echo U('about/about');?>" class="dropdown-toggle">关于我们</a>
+                                <a href="<?php echo U('about/about');?>" class="dropdown-toggle">关于维登</a>
                                 <ul class="dropdown-menu">
-                                    <li><a href="<?php echo U('about/zhaopin');?>">招聘</a></li>
+                                    <li><a href="<?php echo U('about/zhaopin');?>">招聘信息</a></li>
                                     <li><a href="<?php echo U('about/lists');?>">公司环境</a></li>
                                 </ul>
                             </li>
                             <li class="dropdown">
-                                <a href="<?php echo U('service/service');?>" class="dropdown-toggle">服务</a>
+                                <a href="<?php echo U('service/service');?>" class="dropdown-toggle">服务范围</a>
                             </li>
                             <li class="dropdown">
-                                <a href="<?php echo U('news/news');?>" class="dropdown-toggle">新闻</a>
+                                <a href="<?php echo U('news/news');?>" class="dropdown-toggle">新闻资讯</a>
                             </li>
                             <li class="dropdown">
-                                <a href="<?php echo U('cases/cases');?>" class="dropdown-toggle">案例</a>
+                                <a href="<?php echo U('cases/cases');?>" class="dropdown-toggle">项目案例</a>
                             </li>
-                            <li><a href="<?php echo U('contact/contact');?>">联系</a></li>
+                            <li><a href="<?php echo U('contact/contact');?>">联系我们</a></li>
                         </ul>
                     </div>
                     <!-- /导航 -->
@@ -170,7 +169,7 @@
 <!-- /预加载 -->
 
 <!-- Section: Page Header -->
-<section class="section-page-header" style="background-image:url(/weiden/Public/Home/images/b2.jpg)">
+<section class="section-page-header" style="background-image:url(/whedencms/Public/Home/images/b2.jpg)">
 </section>
 <!-- /Section: Page Header -->
 
@@ -202,28 +201,28 @@
             </p>
             <!-- Feature Block -->
             <div class="col-sm-4 feature fadeIn wow" data-wow-duration="1.3s">
-                <span class="tp" ><img class="img5" src="/weiden/Public/Home/images/jieko.png"></span>
+                <span class="tp" ><img class="img5" src="/whedencms/Public/Home/images/jieko.png"></span>
                 <div class="h3 title wzjs ys">接口服务</div>
             </div>
             <!-- /Feature Block -->
 
             <!-- Feature Block -->
             <div class="col-sm-4 feature fadeIn wow" data-wow-duration="1.3s" data-wow-delay="0.4s">
-                <span class="tp" ><img src="/weiden/Public/Home/images/WeChat.png"></span>
+                <span class="tp" ><img src="/whedencms/Public/Home/images/WeChat.png"></span>
                 <div class="h3 title wzjs ys">微信公众号</div>
             <!-- /Feature Block -->
             </div>
 
             <!-- Feature Block -->
             <div class="col-sm-4 feature fadeIn wow" data-wow-duration="1.3s" data-wow-delay="0.8s">
-                <span class="tp" ><img src="/weiden/Public/Home/images/Computer.png"></span>
+                <span class="tp" ><img src="/whedencms/Public/Home/images/Computer.png"></span>
                 <div class="h3 title wzjs ys">网站建设及优化</div>
             </div>
             <!-- /功能块 -->
 
             <!-- Feature Block -->
             <div class="col-sm-4 feature fadeIn wow" data-wow-duration="1.3s" data-wow-delay="0.8s">
-                <span class="tp" ><img src="/weiden/Public/Home/images/move.png"></span>
+                <span class="tp" ><img src="/whedencms/Public/Home/images/move.png"></span>
                 <div class="h3 title wzjs ys">APP商城</div>
             </div>
             <!-- /功能块 -->
@@ -258,7 +257,7 @@
                                 <div class="col-sm-4 feature fadeIn wow hdtp" data-wow-duration="1.3s" data-wow-delay="0.8s">
                                     <div style="height: 140px">
                                         <span class="tu-biao" >
-                                            <img class="img3" style="width:40%;" src="/weiden/Public/Home/images/pc.png"></span>
+                                            <img class="img3" style="width:40%;" src="/whedencms/Public/Home/images/pc.png"></span>
                                     </div>
                                         <div class="h3 title ys">PC端</div>
                                 </div>
@@ -269,7 +268,7 @@
                                 <!-- Feature Block -->
                                 <div class="col-sm-4 feature fadeIn wow hdtp" data-wow-duration="1.3s" data-wow-delay="0.8s">
                                     <div style="height: 140px">
-                                    <span class="tu-biao" ><img class="img1" style="width:40%;" src="/weiden/Public/Home/images/yd.png"></span>
+                                    <span class="tu-biao" ><img class="img1" style="width:40%;" src="/whedencms/Public/Home/images/yd.png"></span>
                                     </div>
                                     <div class="h3 title ys">移动应用</div>
                                 </div>
@@ -279,7 +278,7 @@
                                 <!-- Feature Block -->
                                 <div class="col-sm-4 feature fadeIn wow hdtp" data-wow-duration="1.3s" data-wow-delay="0.8s">
                                     <div style="height: 140px">
-                                    <span class="tu-biao" ><img class="img2" style="width:40%;" src="/weiden/Public/Home/images/wx.png"></span>
+                                    <span class="tu-biao" ><img class="img2" style="width:40%;" src="/whedencms/Public/Home/images/wx.png"></span>
                                         </div>
                                     <div class="h3 title ys">微信二次开发</div>
                                 </div>
@@ -290,9 +289,9 @@
                                 <!-- Feature Block -->
                                 <div class="col-sm-4 feature fadeIn wow hdtp" data-wow-duration="1.3s" data-wow-delay="0.8s">
                                     <div style="height: 140px">
-                                    <span class="tu-biao" ><img class="img4" style="width:40%;" src="/weiden/Public/Home/images/wh.png"></span>
+                                    <span class="tu-biao" ><img class="img4" style="width:40%;" src="/whedencms/Public/Home/images/wh.png"></span>
                                         </div>
-                                    <div class="h3 title ys">iOS开发服务</div>
+                                    <div class="h3 title ys">运营维护</div>
                                 </div>
                                 <!-- /功能块 -->
                             </li>
@@ -632,7 +631,7 @@
 
                 <!-- Footer Logo -->
                 <div class="logo">
-                    <img src="/weiden/Public/Home/images/wheden.png" alt="">
+                    <img src="/whedencms/Public/Home/images/wheden.png" alt="">
                 </div>
                 <!-- /Footer Logo -->
 
@@ -706,7 +705,7 @@
                         </div>
                         <div class="row">
                             <div class="form-group col-md-12 col-xs-12">
-                                <textarea name="message" class="form-control" placeholder="内容... "> </textarea>
+                                <textarea name="message" class="form-control" placeholder="您的需求...."> </textarea>
                             </div>
                         </div>
                         <div class="row">
@@ -721,12 +720,14 @@
 			<div class="col-md-3 col-xs-12 footer-col di-bu">
                 <h3 class="title text-theme">网站菜单</h3>
                 <ul class="menu">
-                    <li><a href="#">首页</a></li>
-                    <li><a href="#">关于我们</a></li>
-                    <li><a href="#">服务</a></li>
-                    <li><a href="#">公司简介</a></li>
-                    <li><a href="#">新闻</a></li>
-                    <li><a href="#">联系</a></li>
+                    <li><a href="<?php echo U('index/index');?>">首页</a></li>
+                    <li><a href="<?php echo U('about/about');?>">关于维登</a></li>
+                    <li><a href="<?php echo U('about/zhaopin');?>">招聘信息</a></li>
+                    <li><a href="<?php echo U('about/lists');?>">公司环境</a></li>
+                    <li><a href="<?php echo U('service/service');?>">服务范围</a></li>
+                    <li><a href="<?php echo U('news/news');?>">新闻资讯</a></li>
+                    <li><a href="<?php echo U('cases/cases');?>">项目案例</a></li>
+                    <li><a href="<?php echo U('contact/contact');?>">联系我们</a></li>
                 </ul>
             </div>
 
@@ -779,6 +780,12 @@
             </div>   
         </div>
     </div>
+    <div class="container pp" align="center">
+        <p>友情链接</p>
+        <p><a href="http://www.baidu.com">百度</a>
+           <span><a href="#">腾讯</a></span>
+        </p>
+    </div>
 </footer>
 <!-- /Footer -->
 
@@ -787,29 +794,29 @@
 <div class="side hidden-xs">
     <ul>
         <li><a href="#">
-            <div class="sidebox"><img src="/weiden/Public/Home/images/zj.png">0769-89865500</div>
+            <div class="sidebox"><img src="/whedencms/Public/Home/images/zj.png">0769-89865500</div>
         </a></li>
         <li>
             <a href="http://wpa.qq.com/msgrd?v=3&uin=710201459&site=qq&menu=yes">
                 <div class="sidebox">
-                    <img src="/weiden/Public/Home/images/drzt.png">710201459
+                    <img src="/whedencms/Public/Home/images/drzt.png">710201459
                 </div>
             </a>
 
         </li>
 
         <li><a href="javascript:void(0);">
-            <div class="sidebox"><img src="/weiden/Public/Home/images/wx2.png">微信</div>
+            <div class="sidebox"><img src="/whedencms/Public/Home/images/wx2.png">微信</div>
         </a></li>
 
     </ul>
     <div class="floating_ck">
         <dl>
 
-            <dd class="qrcord" style="background-image: url(/weiden/Public/Home/images/ewm.png); width: 45px; height: 36px" >
+            <dd class="qrcord" style="background-image: url(/whedencms/Public/Home/images/ewm.png); width: 45px; height: 36px" >
 
                 <div class="floating_left floating_ewm" style="height:201px;">
-                    <i style="background-image: url(/weiden/Public/Home/images/ewm.jpg)"></i>
+                    <i style="background-image: url(/whedencms/Public/Home/images/ewm.jpg)"></i>
                     <p class="qrcord_p01">扫一扫<br>关注维登了解更多</p>
 
 
@@ -831,21 +838,21 @@
 <!-- Modal: Result Message -->
 
 <!-- js -->
-<script src="/weiden/Public/Home/js/jquery-2.2.0.min.js"></script>
-<script src="/weiden/Public/Home/js/bootstrap.min.js"></script>
-<script src="/weiden/Public/Home/js/owl.carousel.min.js"></script>
-<script src="/weiden/Public/Home/js/jquery.magnific-popup.min.js"></script>
-<script src="/weiden/Public/Home/js/jquery.validate.min.js"></script>
-<script src="/weiden/Public/Home/js/jquery.stellar.min.js"></script>
-<script src="/weiden/Public/Home/js/wow.min.js"></script>
-<script src="/weiden/Public/Home/js/masonry.pkgd.min.js"></script>
-<script src="/weiden/Public/Home/js/jquery.appear.js"></script>
-<script src="/weiden/Public/Home/js/jquery.animateNumber.min.js"></script>
-<script src="/weiden/Public/Home/js/general.js"></script>
-<script src="/weiden/Public/Home/js/timezhou.js"></script>
-<script src="/weiden/Public/Home/js/bgcolor.js"></script>
-<script src="/weiden/Public/Home/js/kefu.js"></script>
-<script src="/weiden/Public/Home/js/jquery.FainPic.js"></script>
+<script src="/whedencms/Public/Home/js/jquery-2.2.0.min.js"></script>
+<script src="/whedencms/Public/Home/js/bootstrap.min.js"></script>
+<script src="/whedencms/Public/Home/js/owl.carousel.min.js"></script>
+<script src="/whedencms/Public/Home/js/jquery.magnific-popup.min.js"></script>
+<script src="/whedencms/Public/Home/js/jquery.validate.min.js"></script>
+<script src="/whedencms/Public/Home/js/jquery.stellar.min.js"></script>
+<script src="/whedencms/Public/Home/js/wow.min.js"></script>
+<script src="/whedencms/Public/Home/js/masonry.pkgd.min.js"></script>
+<script src="/whedencms/Public/Home/js/jquery.appear.js"></script>
+<script src="/whedencms/Public/Home/js/jquery.animateNumber.min.js"></script>
+<script src="/whedencms/Public/Home/js/general.js"></script>
+<script src="/whedencms/Public/Home/js/timezhou.js"></script>
+<script src="/whedencms/Public/Home/js/bgcolor.js"></script>
+<script src="/whedencms/Public/Home/js/kefu.js"></script>
+<script src="/whedencms/Public/Home/js/jquery.FainPic.js"></script>
 
 
 <!-- /SCRIPTS -->
@@ -886,8 +893,8 @@
 <div class="styleswitcher-button vertical-middle"><i class="fa fa-gear"></i></div>
 </div>
 
-<link rel="stylesheet" type="text/css" href="/weiden/Public/Home/demo/styleswitcher.css" property="">
-<script src="/weiden/Public/Home/demo/styleswitcher.js"></script>
+<link rel="stylesheet" type="text/css" href="/whedencms/Public/Home/demo/styleswitcher.css" property="">
+<script src="/whedencms/Public/Home/demo/styleswitcher.js"></script>
 
 <!-- /Styleswitcher -->
 
@@ -896,7 +903,7 @@
 
 
 <!--js-->
-<script src="/weiden/Public/Home/js/jquery.SuperSlide.2.1.1.js"></script>
+<script src="/whedencms/Public/Home/js/jquery.SuperSlide.2.1.1.js"></script>
 <script type="text/javascript">jQuery(".slideTxtBox").slide({delayTime:0});</script>
 <script type="text/javascript">
     $('.img1').mousemove(function(){
