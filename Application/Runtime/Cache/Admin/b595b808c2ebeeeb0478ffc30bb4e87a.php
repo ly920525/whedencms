@@ -25,8 +25,8 @@
         <li><a href="<?php echo U('Pass/pass');?>" target="right"><span class="icon-caret-right"></span>修改密码</a></li>
         <li><a href="page.html" target="right"><span class="icon-caret-right"></span>单页管理</a></li>
         <li><a href="adv.html" target="right"><span class="icon-caret-right"></span>首页轮播</a></li>
-        <li><a href="book.html" target="right"><span class="icon-caret-right"></span>留言管理</a></li>
-        <li><a href="column.html" target="right"><span class="icon-caret-right"></span>栏目管理</a></li>
+        <li><a href="<?php echo U('message/message');?>" target="right"><span class="icon-caret-right"></span>留言管理</a></li>
+        <li><a href="<?php echo U('Column/column');?>" target="right"><span class="icon-caret-right"></span>栏目管理</a></li>
     </ul>
     <h2><span class="icon-pencil-square-o"></span>栏目管理</h2>
     <ul>
@@ -39,6 +39,7 @@
     <h2><span class="icon-pencil-square-o"></span>服务管理</h2>
     <ul>
         <li><a href="<?php echo U('Service/lists');?>" target="right"><span class="icon-caret-right"></span>内容管理</a></li>
+        <li><a href="##" target="right"><span class="icon-caret-right"></span>服务详情管理</a></li>
         <li><a href="<?php echo U('Service/cate');?>" target="right"><span class="icon-caret-right"></span>分类管理</a></li>
     </ul>
     <!-- 服务管理结束 -->

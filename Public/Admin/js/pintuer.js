@@ -308,7 +308,7 @@ $(function(){
 		var html="";
 		var detail="";
 		
-		if(image!=null){detail=detail+'<img class="image" src="'+image+'" />';}
+		if(image!=null){detail=detail+'<img class="image" src="/whedencms/Uploads/2017-04-07/58e73fafbac48.jpg" />';}
 		if(content!=null){detail=detail+'<p class="tip-body">'+content+'</p>';}
 		if(getid!=null){detail=detail+$(getid).html();}
 		if(data!=null){detail=detail+$.ajax({url:data,async:false}).responseText;}
