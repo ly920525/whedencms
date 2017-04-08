@@ -19,19 +19,19 @@
         <th width="310">操作</th>
       </tr>
       <!-- 新闻列表 -->
-      <volist name="list" id="news">
+      <?php foreach($list as $vo=>$news){?>
         <tr>
           <td style="text-align:left; padding-left:20px;"><input type="checkbox" name="id[]" value="" />
            1</td>
-          <td>{$news.title}</td>
-          <td width="10%"><img src="__IMG__/11.jpg" alt="" width="70" height="50" /></td>
-          <td>{$news.text}</td>
-          <td><font color="#00CC99">创新领航互联网时代助力企业发展电商</font></td>
-          <td>{$news.jianjie}</td>
-          <td>{$news.time}</td>
-          <td><div class="button-group"> <a class="button border-main" href="add.html"><span class="icon-edit"></span> 修改</a> <a class="button border-red" href="javascript:void(0)" onclick="return del(1,1,1)"><span class="icon-trash-o"></span> 删除</a> </div></td>
+          <td><?php echo $news['title']?></td>
+          <td width="10%"><img src="/whedencms/Uploads/<?php echo $news['img_url']?>" alt="" width="70" height="50" /></td>
+          <td><?php echo $news['text']?></td>
+          <td><font color="#00CC99"><?php echo $news['pid']?></font></td>
+          <td><?php echo $news['jianjie']?></td>
+          <td><?php echo $news['time']?></td>
+          <td><div class="button-group"> <a class="button border-main" href="<?php echo U('/Admin/News/edit',array('id'=>$news['id']))?>"><span class="icon-edit"></span> 修改</a> <a class="button border-red" href="<?php echo U('/Admin/News/del',array('id'=>$news['id']))?>" onclick="return del(1,1,1)"><span class="icon-trash-o"></span> 删除</a> </div></td>
         </tr>
-      </volist>
+      <?php }?>
       <!-- 新闻列表 结束 -->
       <tr>
         <td style="text-align:left; padding:19px 0;padding-left:20px;"><input type="checkbox" id="checkall"/>

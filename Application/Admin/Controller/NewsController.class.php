@@ -21,7 +21,7 @@ class NewsController extends CommonController {
             $arr=array();
             $User = M('news_content'); // 实例化User对象
             $count      = $User->where($arr)->count();// 查询满足要求的总记录数
-            $Page       = new \Think\Page($count,5);// 实例化分页类 传入总记录数和每页显示的记录数(5)
+            $Page       = new \Think\Page($count,25);// 实例化分页类 传入总记录数和每页显示的记录数(5)
             $show       = $Page->show();// 分页显示输出
             $list = $User->where($arr)->order('id')->limit($Page->firstRow.','.$Page->listRows)->select();
             $this->assign('list',$list);// 赋值数据集
@@ -37,19 +37,56 @@ class NewsController extends CommonController {
                 if($_FILES['file']['error']==0){
                     $images=$this->uploadOne($_FILES['file']);
                 }
-                $news=M('news');
+                $news=M('news_content');
                 $news->create();
                 $data['title']=$_POST['title'];
-                $data['text']=$_POST['text'];
-                $data['images']=$images;
+                $data['text']=strip_tags($_POST['text']);
+                $data['img_url']=$images;
                 $data['time']=time();
                 $data['jianjie']=$_POST['simple'];
-                if($news->add()){
+                $list=$news->data($data)->add();
+                if($list){
                     $this->redirect('News/news');die;
                 }else{
                     $this->error();die;
                 }
             }
             $this->display();
+        }
+
+        public function edit(){
+            $id = I('get.id');          //获取GET id
+            $news = M('news_content');
+            $list=$news->where('id='.$id)->find();
+            $this->assign('list',$list);
+            if(IS_POST){
+                $images=$list['img_url'];
+                if($_FILES['file']['error']==0){
+                    $images=$this->uploadOne($_FILES['file']);
+                }
+            $news->create();
+            $data['title']=$_POST['title'];
+            $data['text']=strip_tags($_POST['text']);
+            $data['img_url']=$images;
+            $data['jianjie']=$_POST['simple'];
+            $row=$news->where('id='.$id)->save($data);
+            if($row){
+                $this->redirect('news/news');
+            }else{
+                $this->error();
+            }
+            }
+            $this->display();
+        }
+
+        public function del(){
+            $news=M('news_content');
+            $row=$news->where('id='.I('get.id'))->delete();
+            if($row){
+                $this->success('删除成功',U('/Admin/news/news'));die;
+            }else{
+                $this->error('删除失败');
+            }
+
         }
 }
