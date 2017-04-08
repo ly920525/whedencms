@@ -29,7 +29,7 @@
 
       <?php if(is_array($lists)): $i = 0; $__LIST__ = $lists;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><tr>
       <td><?php echo ($vo["id"]); ?></td>
-      <td><?php echo ($vo["name"]); ?></td>
+      <td><?php echo ($vo["title"]); ?></td>
       <td><?php echo ($vo["update_time"]); ?></td>
       <td><?php echo ($vo["content"]); ?></td>
       <td>1</td>
