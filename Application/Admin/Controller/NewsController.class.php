@@ -44,6 +44,7 @@ class NewsController extends CommonController {
                 $data['img_url']=$images;
                 $data['time']=time();
                 $data['jianjie']=$_POST['simple'];
+                $data['news_url']=$_POST['newsurl'];
                 $list=$news->data($data)->add();
                 if($list){
                     $this->redirect('News/news');die;
@@ -69,6 +70,8 @@ class NewsController extends CommonController {
             $data['text']=strip_tags($_POST['text']);
             $data['img_url']=$images;
             $data['jianjie']=$_POST['simple'];
+            $data['pid']=$_POST['pid'];
+            $data['news_url']=$_POST['newsurl'];
             $row=$news->where('id='.$id)->save($data);
             if($row){
                 $this->redirect('news/news');

@@ -30,12 +30,13 @@
             </div>
         <!-- 新闻列表页 start -->
         <div class="row m-x-30">
+            <?php foreach($list as $vo=>$news){?>
             <figure class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
                 <article class="ny-news">
                 <div class=" col-sm-6 box2">
                     <div class="box1">
                         <div class="box-img">
-                            <img src="__IMG__/website.jpg" alt="" class="ylw-img-responsive2">
+                            <img src="/whedencms/Uploads/<?php echo $news['img_url']?>" alt="" class="ylw-img-responsive2">
                         </div>
                         <div class="box-content">
                             <h4 class="title">维登</h4>
@@ -44,12 +45,12 @@
                         </div>
                     </div>
                 </div>
-                <h4><a href="javascript:;" target="_blank">平面设计师如何提高自己的设计水平？</a></h4>
-                <p>创新领航互联网时代助力企业发展电商</p>
-                <p><span class="fl"><a href="{:U('Index/404')}">查看详情</a></span><span class="sj">2016-03-25</span></p>
+                <h4><a href="javascript:;" target="_blank"><?php echo $news['title']?></a></h4>
+                <p><?php echo $news['text']?></p>
+                <p><span class="fl"><a href="{:U('<?php echo $news['news_url']?>')}">查看详情</a></span><span class="sj"><?php echo date('Y-m-d H:i:s',$news['time'])?></span></p>
                 </article>
             </figure>
-
+            <?php }?>
 
             <figure class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
                 <article class="ny-news">
@@ -57,46 +58,6 @@
                         <div class="box1">
                             <div class="box-img">
                                 <img src="__IMG__/website-1.jpg" alt="" class="ylw-img-responsive2">
-                            </div>
-                            <div class="box-content">
-                                <h4 class="title">维登</h4>
-                                <p class="description">创新领航互联网时代助力企业发展电商</p>
-
-                            </div>
-                        </div>
-                    </div>
-                    <h4><a href="javascript:;" target="_blank">平面设计师如何提高自己的设计水平？</a></h4>
-                    <p>创新领航互联网时代助力企业发展电商</p>
-                    <p><span class="fl"><a href="{:U('Index/404')}">查看详情</a></span><span class="sj">2016-03-25</span></p>
-                </article>
-            </figure>
-
-            <figure class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-                <article class="ny-news">
-                    <div class=" col-sm-6 box2">
-                        <div class="box1">
-                            <div class="box-img">
-                                <img src="__IMG__/website-2.jpg" alt="" class="ylw-img-responsive2">
-                            </div>
-                            <div class="box-content">
-                                <h4 class="title">维登</h4>
-                                <p class="description">创新领航互联网时代助力企业发展电商</p>
-
-                            </div>
-                        </div>
-                    </div>
-                    <h4><a href="javascript:;" target="_blank">平面设计师如何提高自己的设计水平？</a></h4>
-                    <p>创新领航互联网时代助力企业发展电商</p>
-                    <p><span class="fl"><a href="{:U('Index/404')}">查看详情</a></span><span class="sj">2016-03-25</span></p>
-                </article>
-            </figure>
-
-            <figure class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-                <article class="ny-news">
-                    <div class=" col-sm-6 box2">
-                        <div class="box1">
-                            <div class="box-img">
-                                <img src="__IMG__/website-3.jpg" alt="" class="ylw-img-responsive2">
                             </div>
                             <div class="box-content">
                                 <h4 class="title">维登</h4>

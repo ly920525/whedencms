@@ -1,12 +1,11 @@
 <?php
 namespace Admin\Controller;
 use Think\Controller;
-class IndexController extends CommonController {
-    public function index(){
+class InfoController extends CommonController {
+    public function info(){
+
         $this->display();
     }
 
-    public function info(){
-        $this->display();
-    }
+
 }

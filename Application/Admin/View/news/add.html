@@ -23,6 +23,17 @@
         </div>
       </div>
 
+    <div class="form-group">
+        <div class="label">
+            <label>详情链接：</label>
+        </div>
+        <div class="field">
+            <input type="text" class="input w50" value="" name="newsurl" data-validate="required:请输入链接" />
+            <span class="tipss">格式:index/index</span>
+            <div class="tips"></div>
+        </div>
+    </div>
+
       <div class="form-group">
         <div class="label">
           <label>图片：</label>
@@ -37,7 +48,7 @@
             <label>新闻分类：</label>
           </div>
           <div class="field">
-            <select name="cid" class="input w50">
+            <select name="pid" class="input w50">
               <?php foreach($newscata as $v=>$o){?>
               <option value="<?php echo $v?>"><?php echo $o?></option>
             <?php }?>

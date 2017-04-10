@@ -14,7 +14,7 @@ return array(
         '__IMG__' => '/whedencms/Public/Admin/images', // 增加新的images类库路径替换规则
 
         '__UM__' => '/whedencms/Public/Admin/umeditor', // 增加新的编辑器类库路径替换规则
-        
+
     ),
 
     );

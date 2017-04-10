@@ -11,10 +11,11 @@
       <tr>
         <th width="100" style="text-align:left; padding-left:20px;">ID</th>
         <th width="10%">标题</th>
+	    <th width="10%">简介</th>
         <th>图片</th>
         <th>新闻内容</th>
-        <th>简介</th>
-        <th>分类名称</th>
+        <th>新闻分类</th>
+        <th>新闻详情URL</th>
         <th width="10%">更新时间</th>
         <th width="310">操作</th>
       </tr>
@@ -24,10 +25,11 @@
           <td style="text-align:left; padding-left:20px;"><input type="checkbox" name="id[]" value="" />
            1</td>
           <td><?php echo $news['title']?></td>
+          <td><?php echo $news['jianjie']?></td>
           <td width="10%"><img src="/whedencms/Uploads/<?php echo $news['img_url']?>" alt="" width="70" height="50" /></td>
           <td><?php echo $news['text']?></td>
           <td><font color="#00CC99"><?php echo $news['pid']?></font></td>
-          <td><?php echo $news['jianjie']?></td>
+          <td><?php echo $news['news_url']?></td>
           <td><?php echo $news['time']?></td>
           <td><div class="button-group"> <a class="button border-main" href="<?php echo U('/Admin/News/edit',array('id'=>$news['id']))?>"><span class="icon-edit"></span> 修改</a> <a class="button border-red" href="<?php echo U('/Admin/News/del',array('id'=>$news['id']))?>" onclick="return del(1,1,1)"><span class="icon-trash-o"></span> 删除</a> </div></td>
         </tr>
