@@ -22,8 +22,8 @@
       <!-- 新闻列表 -->
       <?php foreach($list as $vo=>$news){?>
         <tr>
-          <td style="text-align:left; padding-left:20px;"><input type="checkbox" name="id[]" value="" />
-           1</td>
+          <td style="text-align:left; padding-left:20px;"><input type="checkbox" name="id[]" value="<?php echo $news['id']?>" />
+           <?php echo $news['id']?></td>
           <td><?php echo $news['title']?></td>
           <td><?php echo $news['jianjie']?></td>
           <td width="10%"><img src="/whedencms/Uploads/<?php echo $news['img_url']?>" alt="" width="70" height="50" /></td>
@@ -31,12 +31,12 @@
           <td><font color="#00CC99"><?php echo $news['pid']?></font></td>
           <td><?php echo $news['news_url']?></td>
           <td><?php echo $news['time']?></td>
-          <td><div class="button-group"> <a class="button border-main" href="<?php echo U('/Admin/News/edit',array('id'=>$news['id']))?>"><span class="icon-edit"></span> 修改</a> <a class="button border-red" href="<?php echo U('/Admin/News/del',array('id'=>$news['id']))?>" onclick="return del(1,1,1)"><span class="icon-trash-o"></span> 删除</a> </div></td>
+          <td><div class="button-group"> <a class="button border-main" href="<?php echo U('/Admin/news/edit',array('id'=>$news['id']))?>"><span class="icon-edit"></span> 修改</a> <a class="button border-red" href="<?php echo U('/Admin/news/del',array('id'=>$news['id']))?>" onclick="return del(1,1,1)"><span class="icon-trash-o"></span> 删除</a> </div></td>
         </tr>
       <?php }?>
       <!-- 新闻列表 结束 -->
       <tr>
-        <td style="text-align:left; padding:19px 0;padding-left:20px;"><input type="checkbox" id="checkall"/>
+        <td style="text-align:left; padding:19px 0;padding-left:20px;"><input type="checkbox" id="checkall" />
           全选 </td>
         <td colspan="7" style="text-align:left;padding-left:20px;"><a href="javascript:void(0)" class="button border-red icon-trash-o" style="padding:5px 15px;" onclick="DelSelect()"> 删除</a>
          </td>
@@ -50,19 +50,19 @@
 <script type="text/javascript">
 
 //搜索
-function changesearch(){	
-		
+function changesearch(){
+
 }
 
 //单个删除
-function del(id,mid,iscid){
+function news(id,mid,iscid){
 	if(confirm("您确定要删除吗?")){
-		
+
 	}
 }
 
 //全选
-$("#checkall").click(function(){ 
+$("#checkall").click(function(){
   $("input[name='id[]']").each(function(){
 	  if (this.checked) {
 		  this.checked = false;
@@ -77,14 +77,14 @@ $("#checkall").click(function(){
 function DelSelect(){
 	var Checkbox=false;
 	 $("input[name='id[]']").each(function(){
-	  if (this.checked==true) {		
-		Checkbox=true;	
+	  if (this.checked==true) {
+		Checkbox=true;
 	  }
 	});
 	if (Checkbox){
 		var t=confirm("您确认要删除选中的内容吗？");
-		if (t==false) return false;		
-		$("#listform").submit();		
+		if (t==false) return false;
+		$("#listform").submit();
 	}
 	else{
 		alert("请选择您要删除的内容!");
@@ -92,132 +92,6 @@ function DelSelect(){
 	}
 }
 
-//批量排序
-function sorts(){
-	var Checkbox=false;
-	 $("input[name='id[]']").each(function(){
-	  if (this.checked==true) {		
-		Checkbox=true;	
-	  }
-	});
-	if (Checkbox){	
-		
-		$("#listform").submit();		
-	}
-	else{
-		alert("请选择要操作的内容!");
-		return false;
-	}
-}
-
-
-//批量首页显示
-function changeishome(o){
-	var Checkbox=false;
-	 $("input[name='id[]']").each(function(){
-	  if (this.checked==true) {		
-		Checkbox=true;	
-	  }
-	});
-	if (Checkbox){
-		
-		$("#listform").submit();	
-	}
-	else{
-		alert("请选择要操作的内容!");		
-	
-		return false;
-	}
-}
-
-//批量推荐
-function changeisvouch(o){
-	var Checkbox=false;
-	 $("input[name='id[]']").each(function(){
-	  if (this.checked==true) {		
-		Checkbox=true;	
-	  }
-	});
-	if (Checkbox){
-		
-		
-		$("#listform").submit();	
-	}
-	else{
-		alert("请选择要操作的内容!");	
-		
-		return false;
-	}
-}
-
-//批量置顶
-function changeistop(o){
-	var Checkbox=false;
-	 $("input[name='id[]']").each(function(){
-	  if (this.checked==true) {		
-		Checkbox=true;	
-	  }
-	});
-	if (Checkbox){		
-		
-		$("#listform").submit();	
-	}
-	else{
-		alert("请选择要操作的内容!");		
-	
-		return false;
-	}
-}
-
-
-//批量移动
-function changecate(o){
-	var Checkbox=false;
-	 $("input[name='id[]']").each(function(){
-	  if (this.checked==true) {		
-		Checkbox=true;	
-	  }
-	});
-	if (Checkbox){		
-		
-		$("#listform").submit();		
-	}
-	else{
-		alert("请选择要操作的内容!");
-		
-		return false;
-	}
-}
-
-//批量复制
-function changecopy(o){
-	var Checkbox=false;
-	 $("input[name='id[]']").each(function(){
-	  if (this.checked==true) {		
-		Checkbox=true;	
-	  }
-	});
-	if (Checkbox){	
-		var i = 0;
-	    $("input[name='id[]']").each(function(){
-	  		if (this.checked==true) {
-				i++;
-			}		
-	    });
-		if(i>1){ 
-	    	alert("只能选择一条信息!");
-			$(o).find("option:first").prop("selected","selected");
-		}else{
-		
-			$("#listform").submit();		
-		}	
-	}
-	else{
-		alert("请选择要复制的内容!");
-		$(o).find("option:first").prop("selected","selected");
-		return false;
-	}
-}
 
 </script>
 </body>
